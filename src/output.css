@@ -643,6 +643,10 @@ video {
   max-width: 300px;
 }
 
+.max-w-28 {
+  max-width: 7rem;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -745,6 +749,28 @@ video {
 
 .hover\:inline-block:hover {
   display: inline-block;
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:block {
+    display: block;
+  }
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:block {
+    display: block;
+  }
+
+  .max-sm\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
